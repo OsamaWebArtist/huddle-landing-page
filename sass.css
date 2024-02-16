@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box; }
+
+:root {
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+  --Pink: hsl(322, 100%, 66%);
+  --font-poppins: "poppins";
+  --font-openSans: "open sans"; }
+
+.huddle-landing-page {
+  background-image: url("./images/bg-hero-desktop.svg");
+  /*media Query Of Header*/
+  /*content style*/ }
+  .huddle-landing-page .header {
+    box-shadow: -1px -11px 16px 1px; }
+    .huddle-landing-page .header .container .head {
+      font-family: var(--font-poppins); }
+      .huddle-landing-page .header .container .head img {
+        width: 180px; }
+      .huddle-landing-page .header .container .head .free-try {
+        box-shadow: -1px 6px 9px #eee;
+        color: var(--Very-Dark-Cyan);
+        font-weight: bold;
+        transition: 0.5s; }
+      .huddle-landing-page .header .container .head .free-try:hover {
+        opacity: 0.7; }
+    .huddle-landing-page .header .container .second-head .para {
+      font-family: var(--font-poppins); }
+      .huddle-landing-page .header .container .second-head .para h2 {
+        color: var(--Very-Dark-Cyan); }
+      .huddle-landing-page .header .container .second-head .para p {
+        color: var(--Very-Dark-Cyan);
+        font-family: var(--font-openSans); }
+      .huddle-landing-page .header .container .second-head .para button {
+        background-color: var(--Pink);
+        transition: 0.5s; }
+      .huddle-landing-page .header .container .second-head .para button:hover {
+        opacity: 0.7; }
+    .huddle-landing-page .header .container .second-head img {
+      width: 55%; }
+  @media (max-width: 767px) {
+    .huddle-landing-page .header .container .second-head img {
+      width: 100%; }
+    .huddle-landing-page .header .container .second-head .para {
+      align-items: center !important; } }
+  .huddle-landing-page .content {
+    margin: 150px auto; }
+    .huddle-landing-page .content .container {
+      font-family: var(--font-poppins); }
+      .huddle-landing-page .content .container > div {
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 13px #eee;
+        padding: 20px 20px 20px 50px; }
+        .huddle-landing-page .content .container > div > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .huddle-landing-page .content .container > div > div h3 {
+            color: var(--Very-Dark-Cyan); }
+          .huddle-landing-page .content .container > div > div p {
+            font-family: var(--font-openSans);
+            color: var(--Grayish-Blue);
+            line-height: 1.6;
+            font-size: 18px; }
+        .huddle-landing-page .content .container > div img {
+          width: 100px; }
+
+/*media Query Of Body Content*/
+@media (max-width: 767px) {
+  .huddle-landing-page .content .container > div > div {
+    width: 100%; }
+  .huddle-landing-page .content .container > div img {
+    width: 100%; } }
+.footer {
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Grayish-Blue);
+  padding: 120px 60px 80px; }
+  .footer .container {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative; }
+    .footer .container > div > img {
+      background-color: white; }
+    .footer .container > div > div {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 10px; }
+      .footer .container > div > div > img {
+        width: 50px; }
+    .footer .container > div ul {
+      list-style: none; }
+      .footer .container > div ul li {
+        cursor: pointer; }
+      .footer .container > div ul li:hover {
+        text-decoration: underline; }
+    .footer .container > div .social-media img {
+      width: 50px;
+      margin: 5px;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 5px;
+      cursor: pointer;
+      transition: 0.5s; }
+    .footer .container > div .social-media img:hover {
+      border-radius: 25%; }
+    .footer .container .build {
+      width: 590px;
+      padding: 20px 50px;
+      top: -240px;
+      transform: translate(-50%);
+      left: 50%;
+      box-shadow: 0px 0px 11px 0px var(--Very-Dark-Cyan); }
+      .footer .container .build h2 {
+        color: var(--Very-Dark-Cyan); }
+      .footer .container .build button {
+        background-color: var(--Pink);
+        transition: 0.5s; }
+      .footer .container .build button:hover {
+        opacity: 0.7; }
+
+@media (max-width: 767px) {
+  .footer .container > div > div {
+    justify-content: center; } }
+
+/*# sourceMappingURL=sass.css.map */
